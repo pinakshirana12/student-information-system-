@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            🎓 StudentMS
+        </div>
+
+        <button id="themeBtn" class="theme-btn">
+            🌙
+        </button>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-text">
+            <p class="small-title">COLLEGE MANAGEMENT</p>
+
+            <h1>
+                Student Management
+                <span>System</span>
+            </h1>
+
+            <p>
+                Manage and search student information easily
+                through a simple and modern dashboard.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- Dashboard -->
+    <section class="dashboard">
+
+        <div class="stat-card">
+            <div class="stat-icon">👨‍🎓</div>
+            <div>
+                <h2 id="totalStudents">0</h2>
+                <p>Total Students</p>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon">💻</div>
+            <div>
+                <h2>3</h2>
+                <p>Departments</p>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon">📚</div>
+            <div>
+                <h2>8</h2>
+                <p>Semesters</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Search -->
+    <section class="search-section">
+
+        <h2>Find a Student</h2>
+
+        <p>
+            Search using Student ID, name or branch.
+        </p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Example: CSE001 or Rahul"
+            >
+
+            <button onclick="searchStudents()">
+                🔍 Search
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Students -->
+    <section class="students-section">
+
+        <div class="section-heading">
+            <div>
+                <p class="small-title">STUDENT DIRECTORY</p>
+                <h2>Students</h2>
+            </div>
+        </div>
+
+        <div id="studentContainer" class="student-container">
+        </div>
+
+        <p id="noResult" class="no-result">
+            No student found.
+        </p>
+
+    </section>
+
+
+    <!-- Student Modal -->
+    <div id="studentModal" class="modal">
+
+        <div class="modal-content">
+
+            <button class="close-btn" onclick="closeModal()">
+                ×
+            </button>
+
+            <div id="studentDetails"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>🎓 Student Management System</h3>
+
+        <p>
+            A college project created using HTML, CSS and JavaScript.
+        </p>
+
+        <p>
+            © 2026 StudentMS
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
